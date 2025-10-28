@@ -34,6 +34,23 @@ docker build -t apitareas . ----> Construye una imagen llamada apitareas a parti
 
 docker run -d -p 3000:3000 --name contenedor-apitareas apitareas ----> Ejecuta un contenedor en segundo plano (-d) mapeando el puerto 3000 del host al 3000 del contenedor.
 
+## DOCKER HUB
+
+Iniciar sesión en Docker Hub parado en la carpeta del proyecto con el comando:
+docker login
+
+Verificar las imágenes locales:
+docker images
+
+Etiquetar la imagen para Docker Hub:
+docker tag apitareas lauttic/apitareas:latest
+
+Subir la imagen al repositorio remoto:
+docker push lauttic/apitareas:latest
+
+Se podrá ver la imágen en la URL: 
+👉 https://hub.docker.com/repositories/lauttic
+
 ## VISTA
 
 Una vez que el contenedor esté corriendo, podés acceder a la aplicación desde tu navegador en:
