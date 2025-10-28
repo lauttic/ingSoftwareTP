@@ -27,4 +27,7 @@ Permite **listar, agregar, eliminar y actualizar tareas** en memoria.
 ### 1️⃣ Clonar el repositorio
 ```bash
 git clone https://github.com/usuario/APITareas.git
-cd APITareas
+
+---
+
+Una vez levantado el contenedor con docker, redirigirse a: http://localhost:3000/
